@@ -4,106 +4,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Britlex</title>
   </head>
   <body>
-    <header>
-      <a href="./index.html"><span>Brit</span>lex</a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <button type="button">Let's Talk</button>
+    <header class="header">
+      <div class="container header-flex">
+        <a class="header-logo" href="./index.html"
+          ><span class="header-logo-span">Brit</span>lex</a
+        >
+        <nav>
+          <ul class="header-nav-list">
+            <li><a class="header-nav-link" href="./index.html">Home</a></li>
+            <li><a class="header-nav-link" href="#">Skills</a></li>
+            <li><a class="header-nav-link" href="#">About Us</a></li>
+            <li><a class="header-nav-link" href="#">Pricing</a></li>
+            <li><a class="header-nav-link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="header-btn" type="button">Let's Talk</button>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Learn Any Foreign Language</h1>
-        <p>
-          With our teachers who write a program for each student, you will be
-          able to make your first sketch after the first lesson.
-        </p>
-        <a href="#">Get started</a>
-        <img
-          src="./images/learning-languages.svg"
-          alt="The girl speaks"
-          width="645"
-        />
+      <section class="hero">
+        <div class="container hero-flex">
+          <div>
+            <h1 class="hero-title">Learn Any Foreign Language</h1>
+            <p class="hero-subtitle">
+              With our teachers who write a program for each student, you will
+              be able to make your first sketch after the first lesson.
+            </p>
+            <a class="hero-link" href="#">Get started</a>
+          </div>
+          <img
+            src="./images/learning-languages.svg"
+            alt="The girl speaks"
+            width="645"
+            height="510"
+          />
+        </div>
       </section>
-      <section>
-        <h2>Skills</h2>
-        <article>
-          <img src="./images/speaking.svg" alt="Speaking" width="390" />
-          <h3>Speaking</h3>
-          <p>
-            Improve your English skills and confidence. Live classes and
-            interactive lessons online. 20% extra free for a limited time only
-          </p>
-          <p>
-            Learn English online and improve your skills through our
-            high-quality courses and resources – all designed for adult language
-            learners.
-          </p>
-          <a href="#">Learn more</a>
-        </article>
-        <article>
-          <img src="./images/writing.svg" alt="Writing" width="390" />
-          <h3>Writing</h3>
-          <p>
-            One of the most important and extensive areas of natural science,
-            the science that studies substances, also their composition
-          </p>
-          <a href="#">Learn more</a>
-        </article>
-        <article>
-          <img src="./images/reading.svg" alt="Reading" width="390" />
-          <h3>Reading</h3>
-          <p>
-            Perception and response actions of the user resulting from the use
-            and/or upcoming use of the product, system or service
-          </p>
-          <a href="#">Learn more</a>
-        </article>
-        <article>
-          <img src="./images/listening.svg" alt="Listening" width="408" />
-          <h3>Listening</h3>
-          <p>
-            Here you can find activities to practise your listening skills.
-            Listening will help you to improve your understanding
-          </p>
-          <a href="#">Learn more</a>
-        </article>
+      <section class="skils">
+        <div class="container">
+          <h2 class="skils-title">Skills</h2>
+          <div class="skils-card-flex">
+            <article class="skils-card skils-card-one">
+              <img src="./images/speaking.svg" alt="Speaking" width="390" />
+              <div>
+                <h3 class="skils-subtitle">Speaking</h3>
+                <p class="skils-text">
+                  Improve your English skills and confidence. Live classes and
+                  interactive lessons online. 20% extra free for a limited time
+                  only
+                </p>
+                <p class="skils-text">
+                  Learn English online and improve your skills through our
+                  high-quality courses and resources – all designed for adult
+                  language learners.
+                </p>
+                <a class="skils-link skils-link-one" href="#">Learn more</a>
+              </div>
+            </article>
+            <div>
+              <div class="skils-card-flex">
+                <article class="skils-card skils-card-two">
+                  <img src="./images/writing.svg" alt="Writing" width="390" />
+                  <div>
+                    <h3 class="skils-subtitle">Writing</h3>
+                    <p class="skils-text">
+                      One of the most important and extensive areas of natural
+                      science, the science that studies substances, also their
+                      composition
+                    </p>
+                    <a class="skils-link" href="#">Learn more</a>
+                  </div>
+                </article>
+                <article class="skils-card skils-card-two">
+                  <img src="./images/reading.svg" alt="Reading" width="390" />
+                  <div>
+                    <h3 class="skils-subtitle">Reading</h3>
+                    <p class="skils-text">
+                      Perception and response actions of the user resulting from
+                      the use and/or upcoming use of the product, system or
+                      service
+                    </p>
+                    <a class="skils-link" href="#">Learn more</a>
+                  </div>
+                </article>
+              </div>
+              <article class="skils-card skils-card-three">
+                <img src="./images/listening.svg" alt="Listening" width="408" />
+                <div>
+                  <h3 class="skils-subtitle">Listening</h3>
+                  <p class="skils-text">
+                    Here you can find activities to practise your listening
+                    skills. Listening will help you to improve your
+                    understanding
+                  </p>
+                  <a class="skils-link" href="#">Learn more</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>About Us</h2>
-        <p>
-          The model offers a framework for discussing problems related to the
-          user's experience, as well as possible ways and means of solving them.
-          Application development begins at the top level (strategy), where the
-          future software product is described quite abstractly from the point
-          of view of the expectations of both users and the customer.
-        </p>
-        <ul>
-          <li>
-            <p><span>800</span> Pupils</p>
-          </li>
-          <li>
-            <p><span>18</span> Teachers</p>
-          </li>
-          <li>
-            <p><span>6</span> Foreign languages</p>
-          </li>
-        </ul>
-        <img
-          src="./images/business_competition.svg"
-          alt="Business competition"
-          width="540"
-        />
+      <section class="about">
+        <div class="container about-flex">
+          <div class="about-block-one">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-text">
+              The model offers a framework for discussing problems related to
+              the user's experience, as well as possible ways and means of
+              solving them. Application development begins at the top level
+              (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both
+              users and the customer.
+            </p>
+            <ul class="about-list">
+              <li>
+                <p class="about-paragraf">
+                  <span class="about-paragraf-span">800</span> Pupils
+                </p>
+              </li>
+              <li>
+                <p class="about-paragraf">
+                  <span class="about-paragraf-span">18</span> Teachers
+                </p>
+              </li>
+              <li>
+                <p class="about-paragraf">
+                  <span class="about-paragraf-span">6</span> Foreign languages
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./images/business_competition.svg"
+            alt="Business competition"
+            width="540"
+          />
+        </div>
       </section>
       <section>
         <h2>Pricing</h2>
